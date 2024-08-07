@@ -21,6 +21,27 @@ function removeDuplicateValues(array) {
 
 console.log(removeDuplicateValues(["apple", "banana", "carrot", "apple", "juice", "sugar", "banana", "tomato", "bread"]));
 
+// Обънкты
+
+let Data = {
+    name: "John",
+    lastname: "Doe",
+    age: 23,
+    sex: "male",
+    city: "London",
+    adddress: "Oxford street, 25",
+    ZIP: 132456,
+    hobby: ["reading books", "jogging", "play guitar"]
+}
+
+let copyData = {};
+
+for (key in Data) {
+    copyData[key] = Data[key];
+}
+
+console.log(copyData)
+
 // Деструктуризация
 
 const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
