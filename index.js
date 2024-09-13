@@ -3,12 +3,16 @@
 // Ответ: null. && возвращает первое ложное значение. Либо, если все верны, то последнее значение.
 
 // Функции
+// Не поняла нужно вернуть дату через объект Date или просто сформировать строку.
+// Сделала оба варианта
 
-function formatDate (day, mounth, year) {
+function formatDate (year, mounth, day) {
     const dd = day >= 10 ? day : '0' + day;
     const mm = mounth >= 10 ? mounth : '0' + mounth;
 
-    return `${dd}-${mm}-${year}`
+    return `${year}-${mm}-${dd}`
+
+    //return new Date(year, mounth, day)
 }
 
 console.log(formatDate(7, 10, 12));
@@ -68,3 +72,4 @@ let {
 } = screenReader;
 
 console.log(ww, wh, pr)
+
